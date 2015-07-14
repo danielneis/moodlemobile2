@@ -1,0 +1,30 @@
+{
+  "version": "0.1.0",
+  "name": "Moodle Mobile",
+  "description": "Official Moodle Mobile 2 app",
+  "launch_path": "/www/index.html",
+  "icons": {
+    "128": "/resources/icon.png",
+    "512": "/resources/icon.png"
+  },
+  "developer": {
+    "name": "Juan Leyva",
+    "url": "https://moodle.com",
+    "email": "juan@moodle.com"
+  },
+  "type": "privileged",
+  "permissions": {
+          "device-storage:sdcard" : "Required for uploading assignments",
+          "systemXHR": "Required to connect to moodle sites",
+          "mobilenetwork" : "Required to connect to moodle sites",
+          "video-capture" : "Required to record videos",
+          "camera" : "Required to upload photos",
+          "browser" : "Required for unsupported activities and single sign-on",
+          "audio-capture" : "Required to upload audio recordings"
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "en"
+}
+
